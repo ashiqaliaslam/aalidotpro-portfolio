@@ -80,6 +80,10 @@ img {
 
 /*===== CLASS CSS ===== */
 
+section {
+    min-height: 100vh;
+}
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -209,11 +213,19 @@ img {
 
 .home__data {
   align-self: right;
+//   align-content: end;
 }
 
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  font-weight: bold;
+}
+
+.home__headline {
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: normal;
 }
 
 .home__title-color {
@@ -278,16 +290,21 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.about__img {
-  justify-self: center;
 
-  img {
-    width: 200px;
-    border-radius: .5rem;
-  }
+.about__img {
+    justify-self: center;
+    
+    img {
+        width: 200px;
+        border-radius: .5rem;
+    }
 }
 
 /* ===== SKILLS =====*/
+
+.d-skill {
+    display: inline-block;
+}
 
 .skills__container {
   row-gap: 2rem;
@@ -325,31 +342,17 @@ img {
   align-items: center;
 }
 
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
+// .skills__bar {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   background-color: var(--first-color);
+//   height: .25rem;
+//   border-radius: .5rem;
+//   z-index: var(--z-back);
+// }
 
-.skills__html {
-  width: 95%;
-}
 
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
 
 .skills__img {
   border-radius: .5rem;
